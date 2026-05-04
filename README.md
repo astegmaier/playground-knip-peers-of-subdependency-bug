@@ -92,6 +92,23 @@ not recurse into transitive deps.
 `DependencyDeputy.isReferencedDependency` then only consults that
 one-hop host map.
 
+## Versions tested
+
+Reproduces consistently with the latest stable release of every knip
+major from 1.x through 6.x (the version currently pinned in
+`package.json` is 6.11.0):
+
+| Major | Latest stable tested | Reproduces? |
+|-------|----------------------|-------------|
+| 6.x   | 6.11.0               | yes         |
+| 5.x   | 5.88.1               | yes         |
+| 4.x   | 4.6.0                | yes         |
+| 3.x   | 3.13.2               | yes         |
+| 2.x   | 2.43.0               | yes         |
+| 1.x   | 1.17.0               | yes         |
+
+So this is a longstanding limitation rather than a recent regression.
+
 ## Related
 
 - [#1124 — unused deps to check peer deps of deps before declaring a dep unused](https://github.com/webpro-nl/knip/issues/1124)

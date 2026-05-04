@@ -1,0 +1,17 @@
+{
+  "name": "playground-knip-peers-of-subdependency-bug",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.12.0",
+  "scripts": {
+    "knip": "knip"
+  },
+  "dependencies": {
+    "apollo-link-error": "^1.1.13",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {
+    "knip": "^5.36.0",
+    "typescript": "^5.6.0"
+  }
+}
